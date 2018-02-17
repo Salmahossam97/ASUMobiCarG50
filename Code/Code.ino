@@ -21,11 +21,11 @@ void Left () {
   
   analogWrite(ENA, 255); //adjusting the speed to the highest value
   analogWrite(ENB, 255); //adjusting the speed to the highest value
-  //turning the right motors off
-  digitalWrite(A1, LOW); 
+  //turning the right motors on
+  digitalWrite(A1, HIGH); 
   digitalWrite(B1, LOW);
-  //turning the left motors on
-  digitalWrite(A2, HIGH);
+  //turning the left motors off
+  digitalWrite(A2, LOW);
   digitalWrite(B2, LOW);
   
 }
