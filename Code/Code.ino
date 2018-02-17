@@ -4,6 +4,8 @@ int B1 = ; //B1 is the 2nd right motors pin
 int A2 = ; //A2 is the 1st left motors pin
 int B2 = ; //B2 is the 2nd left motors pin
 
+//Assuming that when A1,A2 is HIGH and B1,B2 is LOW the wheels move forward
+
 void setup() {
 
   pinMode(ENA, OUTPUT); //Enable pins
@@ -29,12 +31,5 @@ void Left () {
 }
 
 void loop() {
-
- order = Serial.read(); 
-
- if (order == 'L')
- {
-  Left();
- }
-
+  
 }
